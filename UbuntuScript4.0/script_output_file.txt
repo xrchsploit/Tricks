@@ -1,0 +1,51 @@
+Everything the script completed:
+
+- Fixes all broken dependencies
+
+- Updates and Upgrades
+
+- Installs netstat, clamAV, synaptic, ufw, gufw, rkhunter, gedit, terminator, bum (sometimes), libpam-cracklib.
+
+- Asks to remove basic applications like apache2, wireshark, ophcrack, nmap, zenmap, kismet, hashcat, nikto, hydra, netcat.
+
+- Goes through synaptic and asks you to search for programs to remove.
+
+- Asks you to do do firewall settings via gufw
+
+- Runs a clamscan for malware
+
+- Runs rootkit scan via rkhunter
+
+- Does PAM configuration settings, password complexity, account authentication
+
+- File permissions chmod 600 shadow and chmod 644 on passwd
+
+- Tells you to check for crontabs /var/spool
+
+- Tells you to check sudoers file /etc/sudoers.d
+
+- Tells you to check visudo for root accounts
+
+- Disables IPv6 using sysctl
+
+- Checks for DNS spoofing/poisioning /etc/hosts
+
+- Does LightDM configuration 
+
+- Removes random accounts
+
+- Account Age Set /etc/login.defs
+
+- IPv4 security settings
+
+- Checks for other shells like zsh etc
+
+- Checks ports to ensure nothing random is running.
+
+- gnome-control-center <----- opens settigns through the terminal 
+
+- gnome-software <----- opens software center
+
+- alt f2 and type update to get the package manager thingamabob
+
+
