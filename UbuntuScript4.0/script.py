@@ -121,7 +121,7 @@ if apache2 == str("y"):
 	print("Leaving apache2 installed!")
 elif apache2 == str("n"):
 	print("Removing apache2 and all dependencies completley... ")
-	os.system("sudo apt autoremove apache2 -y")
+	os.system("sudo apt purge apache2 -y")
 
 # Wireshark removal
 os.system("clear")
@@ -130,7 +130,7 @@ if wireshark == str("y"):
         print("Leaving wireshark installed!")
 elif wireshark == str("n"):
         print("Removing wireshark and all dependencies completley... ")
-        os.system("sudo apt autoremove wireshark -y")
+        os.system("sudo apt purge wireshark -y")
 
 # Ophcrack removal
 os.system("clear")
@@ -139,7 +139,7 @@ if ophcrack == str("y"):
         print("Leaving ophcrack installed!")
 elif ophcrack == str("n"):
         print("Removing ophcrack and all dependencies completley... ")
-        os.system("sudo apt autoremove ophcrack -y")
+        os.system("sudo apt purge ophcrack -y")
 
 # Nmap removal
 os.system("clear")
@@ -148,7 +148,7 @@ if nmap == str("y"):
         print("Leaving nmap installed!")
 elif nmap == str("n"):
         print("Removing nmap and all dependencies completley... ")
-        os.system("sudo apt autoremove nmap -y")
+        os.system("sudo apt purge nmap -y")
 
 # Zenmap removal
 os.system("clear")
@@ -157,7 +157,7 @@ if zenmap == str("y"):
         print("Leaving zenmap installed!")
 elif zenmap == str("n"):
         print("Removing zenmap and all dependencies completley... ")
-        os.system("sudo apt autoremove zenmap -y")
+        os.system("sudo apt purge zenmap -y")
 
 # Kismet removal
 os.system("clear")
@@ -166,7 +166,7 @@ if kismet == str("y"):
         print("Leaving kismet installed!")
 elif kismet == str("n"):
         print("Removing kismet and all dependencies completley... ")
-        os.system("sudo apt autoremove kismet -y")
+        os.system("sudo apt purge kismet -y")
 
 # Hashcat removal
 os.system("clear")
@@ -175,7 +175,7 @@ if hashcat == str("y"):
         print("Leaving hashcat installed!")
 elif hashcat == str("n"):
         print("Removing hashcat and all dependencies completley... ")
-        os.system("sudo apt autoremove hashcat -y")
+        os.system("sudo apt purge hashcat -y")
 
 # Nikto removal
 os.system("clear")
@@ -184,7 +184,7 @@ if nikto == str("y"):
         print("Leaving nikto installed!")
 elif nikto == str("n"):
         print("Removing nikto and all dependencies completley... ")
-        os.system("sudo apt autoremove nikto -y")
+        os.system("sudo apt purge nikto -y")
 
 # Hydra removal
 os.system("clear")
@@ -193,7 +193,7 @@ if hydra == str("y"):
         print("Leaving hydra installed!")
 elif hydra == str("n"):
         print("Removing hydra and all dependencies completley... ")
-        os.system("sudo apt autoremove hydra -y")
+        os.system("sudo apt purge hydra -y")
 
 # Netcat removal
 os.system("clear")
@@ -202,7 +202,7 @@ if netcat == str("y"):
         print("Leaving netcat installed!")
 elif netcat == str("n"):
         print("Removing netcat and all dependencies completley... ")
-        os.system("sudo apt autoremove netcat -y")
+        os.system("sudo apt purge netcat -y")
 
 
 # Going through packages manually
