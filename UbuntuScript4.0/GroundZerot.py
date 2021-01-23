@@ -233,7 +233,7 @@ os.system("clear")
 # rkhunter thing
 print("This is going to go through and check for rootkits/bootkits")
 time.sleep(2)
-rkhunter = input("Rkhunter scan if this is the first time you run this script type y if it isnt type n")
+rkhunter = input("Do you want to run rkhunter? y/n ")
 
 if rkhunter == str("y"):
 	os.system("sudo rkhunter --check")
@@ -314,9 +314,10 @@ os.system("clear")
 # LightDM
 
 os.system("clear")
-lightdm = input(bcolors.YELLOW + "Do you need lightDM done? y/n" + bcolors.NORMAL)
+lightdm = input(bcolors.YELLOW + "Do you need lightDM done? y/n (Only for Ubuntu not Debian)" + bcolors.NORMAL)
 if lightdm == str("y"):
 	print("OK")
+	os.system("sudo echo 'greeter-session=unity-greeter' >> /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf")
 	os.system("sudo echo 'allow-guest=false' >> /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf")
 elif lightdm == str("n"):
 	print("Skipping LightDM!")
