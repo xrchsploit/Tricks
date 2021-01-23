@@ -69,6 +69,9 @@ time.sleep(7)
 
 os.system("clear")
 
+os.system("sudo software-properties-gtk")
+os.system("sudo gnome-software")
+
 # Firefox settings, warning, apt fix, GUI updates, 
 print(bcolors.RED + bcolors.FLASH + "Ensure you ran this as root. I.E (sudo python3 script.py) " + bcolors.NORMAL)
 print(bcolors.GREEN + "Ensure you did things like: fix apt and got the GUI software update settings " + bcolors.NORMAL)
